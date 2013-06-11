@@ -1,17 +1,16 @@
-Ext.define("s2c.view.User",{
+Ext.define("s2c.view.List",{
 	extend:'Ext.navigation.View',
 	//requires:['Ext.dataview.List'],
-	xtype:'userpanel',
+	xtype:'listpanel',
 	config:{
-		title:'Users',
-		iconCls:'star',
+		title:'List',
+		iconCls:'refresh',
 		items:{
 			xtype:'list',
 			itemTpl:'{name} Email: {email}',
-			autoLoad: true,
 			store:{
 				fields:['name','email','message'],
-				data : loadDataFromParse()
+				data : userJsonArray
 			}
 		}
 	}

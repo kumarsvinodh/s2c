@@ -39,8 +39,11 @@
      *      }
      */
     "js": [
+		{
+			"path":"http://www.parsecdn.com/js/parse-1.0.19.min.js"
+		},
     	{
-            "path": "cordova-2.7.0.js",
+            "path": "cordova-2.7.0.js"
         },
         {
             "path": "touch/sencha-touch.js",

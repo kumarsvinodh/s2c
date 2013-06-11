@@ -3,7 +3,6 @@ Ext.define('s2c.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -16,6 +15,9 @@ Ext.define('s2c.view.Main', {
 		},
 		{
 			xtype:'contactform'
+		},
+		{
+			xtype:'listpanel'
 		}
 	]
 
