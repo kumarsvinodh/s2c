@@ -15,9 +15,6 @@ Ext.define('s2c.view.Main', {
 		},
 		{
 			xtype:'contactform'
-		},
-		{
-			xtype:'listpanel'
 		}
 	]
 

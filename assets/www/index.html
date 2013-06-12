@@ -58,33 +58,6 @@
      -webkit-touch-callout: none;
  	}
     </style>
-	<script type="text/javascript">
-	    var userJsonArray=[];
-		var loadDataFromParse=function(){
-			Parse.initialize("qC6FVY3NRPZUpqU2IppaJj2i2ySdd3xAIABo4PIM", "aRXbXOj2R3PsF7mnGQPNY2z8zIKKzmmhXGxcWzzo");
-			//Get 10 most recent incomplete Todos.
-			var UserItem = Parse.Object.extend("UserItem");
-			var query = new Parse.Query(UserItem);
-			query.limit = 10;
-			query.find({
-				success: function(results) {
-					for(var i = 0; i < results.length; i++) {
-					   userJsonArray.push(results[i].toJSON());
-					}
-				},
-				error: function(error) {
-			    alert("Error when retrieving Todos: " + error.code + " " + error.message);
-				}
-			
-			});
-						var a=[
-							{name: "Ed",email: "Ed@gmail.com"},
-							{name: "John",email: "John@gmail.com"}
-						];
-						setTimeout(function(){}, 1000);
-						return userJsonArray;
-				};
-	</script>
     <!-- The line below must be kept intact for Sencha Command to build your application -->
     <script id="microloader" type="text/javascript" src="touch/microloader/development.js"></script>
 </head>
